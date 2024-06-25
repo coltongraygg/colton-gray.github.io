@@ -70,3 +70,21 @@ console.log(object['c']);
 // USE OBJECTS WHEN YOU NEED A COLLECTION OF NAMED PROPERTIES WITH KEY VALUE PAIRS
     // USER PROFILES
     // COMPLEX GROCERY LISTS
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

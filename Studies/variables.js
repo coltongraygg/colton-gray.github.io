@@ -34,9 +34,10 @@ console.log(myName); // prints => bob
 // 4. Var, let, and const
 
 // var example //
-
+var exampleVar = 1
 
 // let example //
-
+ let exampleLet = 2;
 
 // const example //
+const exampleConst = 3;

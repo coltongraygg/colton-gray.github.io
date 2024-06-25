@@ -1,0 +1,53 @@
+
+
+// The keyword this refers to the context in which a functino is called.
+// The value of this varies depending on how a function is invoked.
+
+// What is it?
+    // A reserved keyword - can only be used for the purposes that it is
+    // Usually determined by how a function is called. (This is called the 'execution context')
+        // In JS, whenever a function is invoked a new execution context is created. A newly created one is put on this stack data structure of execution contexts.
+    // 
+
+
+// Determine the value of this
+    // Always an object or undefined
+    // only known at call time
+
+// Depends on how the function is invoked
+
+// FIVE INVOCATION PATTERNS
+        // FREE FUNCTION INVOCATION
+        // METHOD INVOCATION
+        // USING.BIND(), .CALL(), OR .APPLY()
+        // CONSTRUCTION MODE
+        // GLOBAL REFERENCE (NOT IN A FUNCTION)
+
+// STEP 1 -- GLOBAL REFERENCE
+    // USED IN THE GLOBAL CONTEXT OUTSIDE OF A FUNCTION
+    // REFERS TO GLOBAL CONTEXT (WINDOW OBJECT) 
+
+// STEP 2 -- FREE FUNCTION INVOCATION => defaults to global window object
+    // FUNCTION CALLED FREELY (NOT AS A METHOD OF AN OBJECT)
+    // THIS REFERS TO THE GLOBAL CONTEXT
+
+// STEP 3 -- METHOD INVOCATION
+    // FUNCTION CALLED AS A METHOD OF AN OBJECT
+
+// STEP 4 -- EXPLICIT BINDING
+    // CHOOSE WHAT WE WANT 
+
+// STEP 5 -- CONSTRUCTION MODE
+    // THIS ALWAYS BOUND TO THE INSTANCE (AN EMPTY OBJECT)
+
+// CONSTRUCTOR FUNCTION => RETURNS A NEW 'INSTANCE' OF A CERTAIN TYPE OF OBJECT
+// example 
+
+function User(firstName, lastName, phone, email) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.phone = phone;
+    this.email = email;
+}
+const newUser = new User ('Colton', 'Gray', '111-111-1111', 'email@gmail.com');
+console.log(newUser);
